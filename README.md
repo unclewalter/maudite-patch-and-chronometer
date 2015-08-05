@@ -5,7 +5,7 @@ This is a simple audio playback patch with video sync for a performance of Olga 
 
 ## Usage
 
-
+For patch usage, unlock the patch and help bubbles will appear.
 
 To run the Chronometer, see `chronometer-readme.md`.
 
