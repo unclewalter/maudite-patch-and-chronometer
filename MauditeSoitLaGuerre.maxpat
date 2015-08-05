@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1206.0, 873.0 ],
+		"rect" : [ 34.0, 79.0, 1203.0, 873.0 ],
 		"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -168,7 +168,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 28.0, 190.0, 48.0, 35.0 ],
 									"style" : "",
-									"text" : "3982540"
+									"text" : "474952"
 								}
 
 							}
@@ -246,7 +246,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 149.0, 190.0, 48.0, 35.0 ],
 									"style" : "",
-									"text" : "3982540"
+									"text" : "474952"
 								}
 
 							}
@@ -779,7 +779,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 712.0, 106.0, 761.0, 873.0 ],
+						"rect" : [ 598.0, 79.0, 761.0, 873.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -806,7 +806,21 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-35",
+									"linecount" : 9,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 285.0, 585.0, 205.0, 127.0 ],
+									"style" : "",
+									"text" : "Since callbacks, accessor methods, global variables and a few other standard language features aren't native to Max, there is some seriously hacky programming in this part particularly. The playbar object only sends a the `toggleplay` message to change the playback state of the sfplay~"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-30",
 									"maxclass" : "message",
@@ -3289,7 +3303,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 963.0, 354.0, 640.0, 480.0 ],
+						"rect" : [ 1302.0, 245.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3316,7 +3330,33 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-12",
+									"maxclass" : "toggle",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 165.0, 45.0, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 288.0, 213.0, 24.0, 24.0 ],
+									"style" : ""
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-3",
 									"maxclass" : "message",
@@ -3513,14 +3553,14 @@
 , 							{
 								"box" : 								{
 									"id" : "obj-6",
-									"linecount" : 3,
+									"linecount" : 2,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 103.0, 413.0, 50.0, 49.0 ],
+									"patching_rect" : [ 103.0, 413.0, 50.0, 35.0 ],
 									"style" : "",
-									"text" : "time 3982447"
+									"text" : "time 474859"
 								}
 
 							}
@@ -3681,6 +3721,15 @@
  ],
 						"lines" : [ 							{
 								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-9", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -3718,6 +3767,15 @@
 , 							{
 								"patchline" : 								{
 									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-147", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-12", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
 									"source" : [ "obj-147", 0 ]
@@ -3843,6 +3901,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-1", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-9", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-10", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -3917,9 +3984,9 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 555.0, 136.0, 91.0, 22.0 ],
+					"patching_rect" : [ 555.0, 136.0, 72.0, 22.0 ],
 					"style" : "",
-					"text" : "loadmess set 0"
+					"text" : "loadmess 0"
 				}
 
 			}
@@ -4740,7 +4807,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 466.0, 105.0, 478.0, 81.0 ],
 					"style" : "",
-					"text" : "01:06:22.447",
+					"text" : "00:07:54.859",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -4753,7 +4820,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "int" ],
-					"patching_rect" : [ 255.0, 69.0, 255.0, 20.0 ],
+					"patching_rect" : [ 255.0, 70.0, 255.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 466.0, 74.928406, 385.0, 30.143198 ],
 					"style" : ""
