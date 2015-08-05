@@ -61,8 +61,9 @@
           rawclock = ((Date.now()-startref) + offset);
           var centseconds = Math.floor(rawclock/10);
           var seconds = Math.floor(rawclock/1000)%60;
-          var minutes = Math.floor(rawclock/60000);
-          var TC_Format = pad(minutes, 2) + ":" + pad(seconds, 2) + "." + pad(centseconds, 2);
+          var minutes = Math.floor(rawclock/60000)%60;
+          var hours   = Math.floor(rawclock/3600000);
+          var TC_Format =  hours + ":" + pad(minutes, 2) + ":" + pad(seconds, 2) + "." + pad(centseconds, 2);
           document.getElementById("TC_Field").innerHTML = TC_Format;
         },10)
         active = true;
