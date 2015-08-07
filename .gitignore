@@ -3,3 +3,4 @@ media/video.mp4
 media/audio.*
 *.pdf
 chronometer/node_modules
+session-files
