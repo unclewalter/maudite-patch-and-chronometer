@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 0.0, 45.0, 1071.0, 440.0 ],
+		"rect" : [ 0.0, 45.0, 1235.0, 536.0 ],
 		"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -21,7 +21,7 @@
 		"gridsnaponopen" : 1,
 		"objectsnaponopen" : 1,
 		"statusbarvisible" : 2,
-		"toolbarvisible" : 0,
+		"toolbarvisible" : 1,
 		"lefttoolbarpinned" : 0,
 		"toptoolbarpinned" : 0,
 		"righttoolbarpinned" : 0,
@@ -2325,7 +2325,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 28.0, 177.0, 48.0, 22.0 ],
 									"style" : "",
-									"text" : "39033"
+									"text" : "94"
 								}
 
 							}
@@ -2402,7 +2402,7 @@
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 149.0, 185.0, 48.0, 22.0 ],
 									"style" : "",
-									"text" : "39033"
+									"text" : "94"
 								}
 
 							}
@@ -4563,7 +4563,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 557.0, 120.0, 478.0, 81.0 ],
 					"style" : "",
-					"text" : "00:00:38.93",
+					"text" : "00:00:00.00",
 					"textcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
 				}
 
@@ -4942,17 +4942,17 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-103" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-102" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-106" : [ "live.gain~[4]", "live.gain~", 0 ],
 			"obj-104" : [ "live.gain~[2]", "live.gain~", 0 ],
+			"obj-102" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-107" : [ "live.gain~[5]", "live.gain~", 0 ],
-			"obj-105" : [ "live.gain~[3]", "live.gain~", 0 ]
+			"obj-105" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-103" : [ "live.gain~[1]", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "setTime.maxpat",
-				"bootpath" : "~/Desktop/maudite-soit-la-guerre",
+				"bootpath" : "/maudite-soit-la-guerre",
 				"type" : "JSON",
 				"implicit" : 1
 			}
