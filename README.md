@@ -11,6 +11,6 @@ To run the Chronometer, see `chronometer-readme.md`.
 
 ## External media
 
-Provided that there is a /media folder populated with the correct files, the patch will take care of everything. If something hasn't loaded, first try [Refresh Media]. If that doesn't work, check that files are actually present.
+Provided that there is a /media folder in the same directory as the patch populated with the correct files, the patch will take care of everything on startup. If something hasn't loaded, first try [Refresh Media]. If that doesn't work, check that files are actually present.
 
-All of the samples go in the `/samples` folder. The click track goes in `audio.wav` and the video goes in `video.mp4` in the media. All of this can be changed in the `fileInitController` subpatch.
+The click track and sequenced samples go in `audio.aiff` and the video goes in `video.mp4` in the `/media` folder. All of this can be changed in the `fileInitController` subpatch found inside the `transportConotroller` subpatch.
