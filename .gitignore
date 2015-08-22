@@ -4,3 +4,4 @@ media/audio.*
 *.pdf
 chronometer/node_modules
 session-files
+release
