@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1078.0, 437.0 ],
+		"rect" : [ 34.0, 79.0, 1078.0, 435.0 ],
 		"bgcolor" : [ 0.095481, 0.100396, 0.100293, 1.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -39,17 +39,18 @@
 		"subpatcher_template" : "",
 		"boxes" : [ 			{
 				"box" : 				{
-					"bubble" : 1,
-					"hidden" : 1,
+					"fontsize" : 20.0,
 					"id" : "obj-11",
-					"maxclass" : "comment",
+					"maxclass" : "textbutton",
 					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 886.0, 356.0, 150.0, 24.0 ],
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 847.833374, 606.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 885.5, 356.0, 159.0, 24.0 ],
+					"presentation_rect" : [ 913.0, 332.0, 137.0, 83.0 ],
 					"style" : "",
-					"text" : "Turn on audio"
+					"text" : "DSP Status"
 				}
 
 			}
@@ -59,7 +60,7 @@
 					"maxclass" : "ezdac~",
 					"numinlets" : 2,
 					"numoutlets" : 0,
-					"patching_rect" : [ 951.0, 477.0, 45.0, 45.0 ],
+					"patching_rect" : [ 736.333374, 667.0, 45.0, 45.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 818.5, 332.0, 83.0, 83.0 ],
 					"style" : ""
@@ -355,15 +356,6 @@
 											}
  ],
 										"lines" : [ 											{
-												"patchline" : 												{
-													"destination" : [ "obj-20", 0 ],
-													"disabled" : 0,
-													"hidden" : 0,
-													"source" : [ "obj-1", 0 ]
-												}
-
-											}
-, 											{
 												"patchline" : 												{
 													"destination" : [ "obj-45", 0 ],
 													"disabled" : 0,
@@ -4693,6 +4685,19 @@
 				}
 
 			}
+, 			{
+				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 736.333374, 637.0, 50.0, 22.0 ],
+					"style" : "",
+					"text" : "open"
+				}
+
+			}
  ],
 		"lines" : [ 			{
 				"patchline" : 				{
@@ -4759,6 +4764,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-11", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-139", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4799,6 +4813,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-152", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-7", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -4976,11 +4999,11 @@
  ],
 		"parameters" : 		{
 			"obj-103" : [ "live.gain~[1]", "live.gain~", 0 ],
-			"obj-102" : [ "live.gain~", "live.gain~", 0 ],
 			"obj-106" : [ "live.gain~[4]", "live.gain~", 0 ],
 			"obj-104" : [ "live.gain~[2]", "live.gain~", 0 ],
 			"obj-107" : [ "live.gain~[5]", "live.gain~", 0 ],
-			"obj-105" : [ "live.gain~[3]", "live.gain~", 0 ]
+			"obj-105" : [ "live.gain~[3]", "live.gain~", 0 ],
+			"obj-102" : [ "live.gain~", "live.gain~", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
