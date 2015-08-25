@@ -1,5 +1,5 @@
 media/samples/*
-media/video.mp4
+media/video.*
 media/audio.*
 *.pdf
 chronometer/node_modules
